@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getTeams() {
         ApiService apiService = RetrofitClient.getRetrofitInstance().create(ApiService.class);
-        Call<TeamResponse> call = apiService.getAllTeams("English Premier League");
+        Call<TeamResponse> call = apiService.getAllTeams();
 
         call.enqueue(new Callback<TeamResponse>() {
             @Override

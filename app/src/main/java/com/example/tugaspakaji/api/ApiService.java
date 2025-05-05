@@ -8,5 +8,5 @@ import retrofit2.http.Query;
 
 public interface ApiService {
     @GET("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League")
-    Call<TeamResponse> getAllTeams(@Query("l") String league);
+    Call<TeamResponse> getAllTeams();
 }
